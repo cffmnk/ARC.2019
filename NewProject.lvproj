@@ -102,6 +102,7 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="GoTo.vi" Type="VI" URL="../GoTo.vi"/>
 		<Item Name="HardwareInit.vi" Type="VI" URL="../HardwareInit.vi"/>
 		<Item Name="MainProgram.vi" Type="VI" URL="../MainProgram.vi"/>
 		<Item Name="MoveRobot.vi" Type="VI" URL="../MoveRobot.vi"/>
@@ -159,6 +160,16 @@ AddOutputFilter chunkFilter
 				<Item Name="myRIO v1.1 Open.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/myRIO v1.1 Open.vi"/>
 				<Item Name="Named Mutex.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Named Mutex.ctl"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
+				<Item Name="NI_Robotics Utilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Utilities/NI_Robotics Utilities.lvlib"/>
+				<Item Name="NI_Robotics_AbstractAstarNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/AbstractAstarNode/NI_Robotics_AbstractAstarNode.lvclass"/>
+				<Item Name="NI_Robotics_AbstractDstarNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/AbstractDstarNode/NI_Robotics_AbstractDstarNode.lvclass"/>
+				<Item Name="NI_Robotics_AbstractDstarWorldMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/WorldMap/AbstractDstarWorldMap/NI_Robotics_AbstractDstarWorldMap.lvclass"/>
+				<Item Name="NI_Robotics_AbstractMapNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/AbstractMapNode/NI_Robotics_AbstractMapNode.lvclass"/>
+				<Item Name="NI_Robotics_AbstractWorldMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/WorldMap/AbstractWorldMap/NI_Robotics_AbstractWorldMap.lvclass"/>
+				<Item Name="NI_Robotics_Navigation .lvlib" Type="Library" URL="/&lt;vilib&gt;/robotics/Navigation/NI_Robotics_Navigation .lvlib"/>
+				<Item Name="NI_Robotics_OccupancyGridMapNode.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/MapNode/OccupancyGridNode/NI_Robotics_OccupancyGridMapNode.lvclass"/>
+				<Item Name="NI_Robotics_OccupancyGridWorldMap.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/WorldMap/OccupancyGridWorldMap/NI_Robotics_OccupancyGridWorldMap.lvclass"/>
+				<Item Name="NI_Robotics_Priority Queue.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/robotics/Navigation/shared/Priority Queue/NI_Robotics_Priority Queue.lvclass"/>
 				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
 				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
 				<Item Name="QR Code Description Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Instrument.llb/QR Code Description Options.ctl"/>
@@ -175,6 +186,7 @@ AddOutputFilter chunkFilter
 				<Item Name="roboRIO v1.0 Read I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Read I2C.vi"/>
 				<Item Name="roboRIO v1.0 Write I2C.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/I2C/vis/roboRIO v1.0 Write I2C.vi"/>
 				<Item Name="ROI Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/ROI Descriptor"/>
+				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 				<Item Name="System FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/System/typedefs/System FPGA Reference.ctl"/>
 				<Item Name="TETRIX_Enable_DC_Controller_myRIO.vi" Type="VI" URL="/&lt;vilib&gt;/Pitsco Education/TETRIX Expansion Controller Toolkit for myRIO/Motor_Expansion_Controller/TETRIX_Enable_DC_Controller_myRIO.vi"/>
 				<Item Name="TETRIX_Enable_Servo_Controller_myRIO.vi" Type="VI" URL="/&lt;vilib&gt;/Pitsco Education/TETRIX Expansion Controller Toolkit for myRIO/Servo_Expansion_Controller/TETRIX_Enable_Servo_Controller_myRIO.vi"/>
@@ -182,7 +194,6 @@ AddOutputFilter chunkFilter
 				<Item Name="TETRIX_Reset_Encoders_myRIO.vi" Type="VI" URL="/&lt;vilib&gt;/Pitsco Education/TETRIX Expansion Controller Toolkit for myRIO/Motor_Expansion_Controller/TETRIX_Reset_Encoders_myRIO.vi"/>
 				<Item Name="TETRIX_Set_Motor_Speed(s)_myRIO.vi" Type="VI" URL="/&lt;vilib&gt;/Pitsco Education/TETRIX Expansion Controller Toolkit for myRIO/Motor_Expansion_Controller/TETRIX_Set_Motor_Speed(s)_myRIO.vi"/>
 				<Item Name="TETRIX_Set_Servo_Position(s)_myRIO.vi" Type="VI" URL="/&lt;vilib&gt;/Pitsco Education/TETRIX Expansion Controller Toolkit for myRIO/Servo_Expansion_Controller/TETRIX_Set_Servo_Position(s)_myRIO.vi"/>
-				<Item Name="TETRIX_Set_Servo_Speed_myRIO.vi" Type="VI" URL="/&lt;vilib&gt;/Pitsco Education/TETRIX Expansion Controller Toolkit for myRIO/Servo_Expansion_Controller/TETRIX_Set_Servo_Speed_myRIO.vi"/>
 				<Item Name="Unlock Mutex.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Unlock Mutex.vi"/>
 				<Item Name="Validate Channels.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Validate Channels.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
