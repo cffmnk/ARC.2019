@@ -130,7 +130,7 @@
 	</Item>
 	<Item Name="myRIO-1900" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">myRIO-1900</Property>
-		<Property Name="alias.value" Type="Str">172.16.0.1</Property>
+		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;FPGAPersonality,myRIO_FP_Default;TARGET_TYPE,RT;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -210,6 +210,8 @@ DirectoryIndex index.htm
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="colorClassification.vi" Type="VI" URL="../colorClassification.vi"/>
+		<Item Name="Control 1.ctl" Type="VI" URL="../Control 1.ctl"/>
+		<Item Name="fin.vi" Type="VI" URL="../fin.vi"/>
 		<Item Name="GoTo.vi" Type="VI" URL="../GoTo.vi"/>
 		<Item Name="HardwareInit.vi" Type="VI" URL="../HardwareInit.vi"/>
 		<Item Name="lidar.vi" Type="VI" URL="../lidar.vi"/>
@@ -220,6 +222,7 @@ DirectoryIndex index.htm
 		<Item Name="MoveShift.vi" Type="VI" URL="../MoveShift.vi"/>
 		<Item Name="PODYEZD.vi" Type="VI" URL="../PODYEZD.vi"/>
 		<Item Name="QR.vi" Type="VI" URL="../QR.vi"/>
+		<Item Name="QR.vi" Type="VI" URL="../../../Downloads/QR.vi"/>
 		<Item Name="takeCube.vi" Type="VI" URL="../takeCube.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -366,6 +369,7 @@ DirectoryIndex index.htm
 				<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="MoveRobot.vi" Type="VI" URL="../../../Downloads/MoveRobot.vi"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -396,7 +400,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7D8B8173-9C12-4FC0-A94B-405CA630EE83}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
